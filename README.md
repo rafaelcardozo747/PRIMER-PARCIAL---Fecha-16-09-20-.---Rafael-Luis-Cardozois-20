@@ -7,4 +7,4 @@ Respuestas
 
 3 El objetivo de la refactorizacion de codigo, por el contrario, es mejorar la facilidad de comprensión del código o cambiar su estructura y diseño y eliminar código muerto, para facilitar el mantenimiento en el futuro.
 
-4 Si
+4 Si.
