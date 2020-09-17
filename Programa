@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace primer_Parcial_LaboratorioII
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numerodeVentas = 0;
+            double[] ventas;
+
+            Console.Write("Por favor ingrese la cantidad de ventas");
+            numerodeVentas = Convert.ToInt32(Console.ReadLine());
+
+            ventas = new double[numerodeVentas];
+
+            for (int i = 0; i < numerodeVentas; i++)
+            {
+                Console.Write("Por favor ingrese #{0}:", i + 1);
+                ventas[i] = Convert.ToDouble(Console.ReadLine());
+            }
+                double suma = ventas.Sum();
+                for (int i = 0; i < numerodeVentas; i++)
+                {
+                    double aporte = ventas[i] / suma;
+                    Console.WriteLine("Venta # {0} era de {1:C2} y se agregó {2:P2", i + 1, ventas[i], aporte);
+                }
+                Console.WriteLine("Total suma de ventas i {0:C2}", suma);
+            }
+        }
+    }
